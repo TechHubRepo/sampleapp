@@ -22,8 +22,11 @@ Follow the steps to Install application
 # How to Run
 Run the application as following under root diretory of project
 
-	Option 1
-		$ mvn spring-boot:run
-	Option 2
-		Step 1 :  $ mvn clean compile package
-		Step 2 :  $ java -jar target/samplewebapp.war
+	$ mvn spring-boot:run
+
+# How to Build Docker Image
+Follow the following steps to make docker image
+
+    $ mvn clean package
+    $ docker image build -t techeduhub/tomcat:8.5.55 .
+    $ docker push techeduhub/tomcat:8.5.55

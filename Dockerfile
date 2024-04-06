@@ -1,5 +1,5 @@
 FROM ubuntu:22.04
-LABEL maintainer help.techeduhub@gmail.com
+LABEL maintainer = TechHub
 RUN apt-get update -y
 RUN apt-get install openjdk-17-jdk wget -y
 RUN wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.55/bin/apache-tomcat-8.5.55.tar.gz -O /tmp/tomcat.tar.gz
